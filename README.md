@@ -48,13 +48,3 @@
 - **Stack** : React · TypeScript · Tailwind CSS · Supabase · Vite
 
 ---
-
-## 📈 GitHub Stats
-
-![changmindev's GitHub stats](https://github-readme-stats.vercel.app/api?username=changmindev&show_icons=true&theme=dark&hide_border=true&bg_color=0d1117)
-
----
-
-## 📫 Contact
-
-[![Gmail](https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:your@email.com)
