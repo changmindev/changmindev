@@ -1,16 +1,60 @@
-## Hi there 👋
+# 안녕하세요, 창민(WOODY)입니다 👋
 
-<!--
-**changmindev/changmindev** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+> QA 자동화 엔지니어 + 바이브 코딩으로 실제 서비스를 만드는 개발자
 
-Here are some ideas to get you started:
+---
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## 🔧 What I Do
+
+- **QA 자동화** — Appium 기반 Android 앱 테스트 프레임워크 설계 및 구축
+- **웹 개발** — React + TypeScript로 실제 서비스 프로토타이핑
+- **도구 중심** — 반복되는 작업을 코드로 자동화하는 것을 좋아합니다
+
+---
+
+## 🛠️ Tech Stack
+
+**자동화 / QA**
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![Appium](https://img.shields.io/badge/Appium-662D91?style=flat-square&logo=appium&logoColor=white)
+![ADB](https://img.shields.io/badge/ADB-3DDC84?style=flat-square&logo=android&logoColor=white)
+
+**웹 프론트엔드**
+
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
+![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=flat-square&logo=supabase&logoColor=white)
+
+---
+
+## 📌 Projects
+
+### 🤖 [모바일 앱 자동화 프레임워크](https://github.com/changmindev/auto-test.demo)
+> Android 앱 대상 Appium(UiAutomator2) 기반 Excel-Driven 자동화 프레임워크
+
+- Excel로 테스트케이스 관리, HTML 리포트 + JSON + 스크린샷 자동 생성
+- `actions / core / utils` 단방향 의존 구조 설계
+- **Stack** : Python · Appium · openpyxl · ADB
+
+---
+
+### 🏪 [LoyalHub — 소상공인 고객관리 앱](https://github.com/changmindev/sideproject)
+> 단골 고객 관리 + 쿠폰 SMS 발송 웹 서비스
+
+- 바이브 코딩(Vibe Coding)으로 기획부터 배포까지 직접 구축
+- refresh-safe 인증 구조, Supabase 연동, SMS 서버 포함
+- **Stack** : React · TypeScript · Tailwind CSS · Supabase · Vite
+
+---
+
+## 📈 GitHub Stats
+
+![changmindev's GitHub stats](https://github-readme-stats.vercel.app/api?username=changmindev&show_icons=true&theme=dark&hide_border=true&bg_color=0d1117)
+
+---
+
+## 📫 Contact
+
+[![Gmail](https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:your@email.com)
