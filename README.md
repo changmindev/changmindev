@@ -1,24 +1,35 @@
 # 안녕하세요, 최창민(WOODY)입니다.
 
-> QA + LLM을 활용해 아이디어를 서비스로 구현하는 QA Engineer 
+> QA + LLM을 활용해 아이디어를 서비스로 구현하는 QA Engineer
+> Live Commerce · Global 다국어 QA · AI EduTech 도메인 경험
 
 ---
 
-## What I Do
+## Experience
 
-- **QA 자동화** — Appium 기반 Android 앱 테스트 프레임워크 설계 및 구축
-- **웹 개발** — 웹 서비스 기획·구현 — LLM을 활용해 아이디어부터 배포까지 직접 진행 경험 
-- **도구 중심** — 반복되는 작업을 코드로 자동화 경험
+### 위버스브레인 · QA Engineer (2026.02 ~ 현재)
+- **SSO 통합인증(Keycloak) QA 리드** — TC 62건 설계·수행 (PKCE·토큰·세션·MFA·SLO·보안·성능 전 영역), 소셜 로그인 15가지 조합 검증, 보안 시나리오 7건(CSRF·XSS·오픈 리다이렉트 등)
+- 뇌새김 실기기(갤럭시탭·LG탭) 기준 학습 플로우 E2E 검증, 스피킹맥스 STT 기반 AI 회화 기능 검증
+- LLM 기반 QA 지원 도구 개발(Claude MCP + Chrome Automation), Appium 자동화 운영·유지보수
+
+### 와이즈스톤(Shoplive Korea 파견) · QA Engineer (2023.08 ~ 2025.12)
+- 라이브 커머스 플랫폼 Web/App QA — 스트리밍 안정성, 영상/음성 싱크, 실시간 인터랙션 검증
+- eBay Auction 글로벌 서비스 다국어(L10n) 검증, AI Clip 기능 실패 유형 분류·재현 시나리오 작성
+- Jira·Confluence 기반 QA 프로세스 구축
 
 ---
 
 ## Tech Stack
 
-**자동화 / QA**
+**QA / 자동화**
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![Flask](https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white)
 ![Appium](https://img.shields.io/badge/Appium-662D91?style=flat-square&logo=appium&logoColor=white)
 ![ADB](https://img.shields.io/badge/ADB-3DDC84?style=flat-square&logo=android&logoColor=white)
+![Postman](https://img.shields.io/badge/Postman-FF6C37?style=flat-square&logo=postman&logoColor=white)
+![Keycloak](https://img.shields.io/badge/Keycloak-4D4D4D?style=flat-square&logo=keycloak&logoColor=white)
+![Anthropic](https://img.shields.io/badge/Claude-D97757?style=flat-square&logo=anthropic&logoColor=white)
 
 **사이드 프로젝트 활용 기술**
 
@@ -30,6 +41,16 @@
 ---
 
 ## Projects
+
+### [Redmine QA 플랫폼](https://github.com/changmindev/redmine-qa-platform)
+> 이슈 트래커 연동 QA 자동화 — 릴리스 준비도 판정 · AI 기반 테스트케이스 생성
+
+- 근거(evidence) 기반 신뢰도 판정 — 생성된 테스트케이스마다 원문 근거를 남겨, 사람 검수 없이 실행해도 되는지 시스템이 스스로 판단
+- 이슈 → 테스트케이스 → 실행결과 → 결함을 잇는 요구사항 추적 매트릭스(RTM), 우선순위 가중 워크로드 진단
+- pytest 172케이스, SSRF·수식 주입(Formula Injection) 방어 등 보안까지 고려한 설계
+- **Stack** : Python · Flask · Anthropic Claude SDK/CLI · pytest
+
+---
 
 ### [모바일 앱 자동화 프레임워크](https://github.com/changmindev/auto-test.demo)
 > Android 앱 대상 Appium(UiAutomator2) 기반 Excel-Driven 자동화 프레임워크
