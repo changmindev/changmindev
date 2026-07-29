@@ -44,7 +44,7 @@
 > 단골 고객 관리 + 쿠폰 SMS 발송 웹 서비스
 
 - LLM을 활용해 기획부터 배포까지 직접 구축
-- refresh-safe 인증 구조, Supabase 연동, SMS 서버 포함
+- 새로고침에도 로그인 상태가 끊기지 않는 클라이언트 인증 흐름(데모), Supabase 연동, SMS 서버 포함
 - **Stack** : React · TypeScript · Tailwind CSS · Supabase · Vite
 
 ---
