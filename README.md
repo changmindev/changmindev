@@ -8,7 +8,7 @@
 ## Experience
 
 ### 위버스브레인 · QA Engineer (2026.02 ~ 현재)
-- **SSO 통합인증(Keycloak) 프로젝트 QA 리드** — 기능·비기능(보안·성능) 테스트 설계·수행, 소셜 로그인(네이버·카카오·애플) 조합별 회귀 테스트, 결함 발견·재현 시나리오 작성
+- **SSO 통합인증(Keycloak) 전환 프로젝트 QA 단독 수행** — 기능·비기능(보안·성능) 테스트 설계·수행, 소셜 로그인(네이버·카카오·애플) 조합별 회귀 테스트, 결함 발견·재현 시나리오 작성
 - MAX AI·스피킹맥스 STT 음성 인식·AI 응답 품질 검증 체계 수립, 뇌새김 실기기(갤럭시탭·LG탭) 기준 학습 플로우 E2E 검증
 - Claude SDK/MCP 기반 QA 지원 도구 자체 개발, 기존 Appium 자동화 스크립트 고도화
 
@@ -54,9 +54,10 @@
 
 ### [모바일 앱 자동화 프레임워크](https://github.com/changmindev/auto-test.demo)
 > Android 앱 대상 Appium(UiAutomator2) 기반 Excel-Driven 자동화 프레임워크
+> — 재직 중 운영·고도화한 자동화 구조를 공개용 데모로 재구성했습니다 (앱 정보·TC 데이터는 전부 익명화).
 
 - Excel로 테스트케이스 관리, HTML 리포트 + JSON + 스크린샷 자동 생성
-- `actions / core / utils` 단방향 의존 구조 설계
+- `actions / core / utils` 단방향 의존 구조로 정리 — 새 액션 추가 시 수정 지점을 한 곳으로 고정
 - **Stack** : Python · Appium · openpyxl · ADB
 
 ---
@@ -64,8 +65,9 @@
 ### [LoyalHub — 소상공인 고객관리 앱](https://github.com/changmindev/sideproject)
 > 단골 고객 관리 + 쿠폰 SMS 발송 웹 서비스
 
-- LLM을 활용해 기획부터 배포까지 직접 구축
-- 새로고침에도 로그인 상태가 끊기지 않는 클라이언트 인증 흐름(데모), Supabase 연동, SMS 서버 포함
-- **Stack** : React · TypeScript · Tailwind CSS · Supabase · Vite
+- LLM을 활용해 기획부터 배포까지 직접 구축 — 초기 화면은 AI 빌더로 빠르게 세우고, 데이터 모델·분석 로직·품질 검증은 직접 설계
+- 이탈 위험도 판정 등 분석 함수에 **경계값·예외 입력·설정값 폴백 경로**를 나눠 Vitest 단위 테스트 설계
+- **GitHub Actions로 lint · test · build를 push/PR마다 자동 실행**하도록 CI 구성
+- **Stack** : React · TypeScript · Tailwind CSS · Supabase · Vite · Vitest · GitHub Actions
 
 ---
