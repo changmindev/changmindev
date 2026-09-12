@@ -62,12 +62,14 @@
 
 ---
 
-### [LoyalHub — 소상공인 고객관리 앱](https://github.com/changmindev/sideproject)
-> 단골 고객 관리 + 쿠폰 SMS 발송 웹 서비스
+### [LoyalHub — 소상공인 고객 관리 데모](https://github.com/changmindev/sideproject)
+> 🔗 **[loyalhub-demo.vercel.app](https://loyalhub-demo.vercel.app)** — 환경변수 없이 바로 뜹니다
+> 초기 화면은 AI 빌더로 세우고, **결함을 찾아 고치고 자동화 가능한 상태로 정비하는 작업은 직접** 했습니다.
 
-- LLM을 활용해 기획부터 배포까지 직접 구축 — 초기 화면은 AI 빌더로 빠르게 세우고, 데이터 모델·분석 로직·품질 검증은 직접 설계
-- 이탈 위험도 판정 등 분석 함수에 **경계값·예외 입력·설정값 폴백 경로**를 나눠 Vitest 단위 테스트 설계
-- **GitHub Actions로 lint · test · build를 push/PR마다 자동 실행**하도록 CI 구성
+- **결함 24건 발견 · 22건 수정** — 재현 절차·기대/실제·원인·처리를 [DEFECTS.md](https://github.com/changmindev/sideproject/blob/main/docs/DEFECTS.md)에 기록. 고치지 않은 2건은 **왜 안 고쳤는지**를 남겼습니다
+- 그중 7건은 **배포본을 직접 조작하다 나왔습니다** — 로컬에서 `lint · test · build`가 전부 초록인 상태에서. 셋 중 무엇도 타입을 검사하지 않기 때문이었고, CI에 `typecheck`를 넣어 같은 종류가 다시 새지 않게 막았습니다
+- **보안 점검** — 개발 서버가 모든 네트워크 인터페이스에 열려 있던 설정, 배포본의 보안 헤더 부재를 잡았습니다. `npm audit` 6건은 **도달 불가능하다고 판단한 근거**까지 [SECURITY.md](https://github.com/changmindev/sideproject/blob/main/docs/SECURITY.md)에 적었습니다
+- 🔴 **문자·알림톡 발송은 범위 밖입니다** — 건당 비용과 발신번호 사전등록이 필요합니다. 데모는 네트워크 요청 자체를 만들지 않아 실수로 나갈 경로가 없습니다
 - **Stack** : React · TypeScript · Tailwind CSS · Supabase · Vite · Vitest · GitHub Actions
 
 ---
