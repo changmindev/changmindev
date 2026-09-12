@@ -25,6 +25,7 @@
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![Flask](https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white)
+![Playwright](https://img.shields.io/badge/Playwright-2EAD33?style=flat-square&logo=playwright&logoColor=white)
 ![Appium](https://img.shields.io/badge/Appium-662D91?style=flat-square&logo=appium&logoColor=white)
 ![ADB](https://img.shields.io/badge/ADB-3DDC84?style=flat-square&logo=android&logoColor=white)
 ![Postman](https://img.shields.io/badge/Postman-FF6C37?style=flat-square&logo=postman&logoColor=white)
@@ -41,6 +42,22 @@
 ---
 
 ## Projects
+
+### [playwright-e2e](https://github.com/changmindev/playwright-e2e) · [loyalhub-e2e](https://github.com/changmindev/loyalhub-e2e)
+> 웹 E2E 자동화 — **대상을 고칠 권한이 있느냐 없느냐**로 저장소를 나눴습니다
+
+```
+playwright-e2e   97 tests — 90 passed, 7 xfailed    (외부 사이트 대상)
+loyalhub-e2e     27 tests — 27 passed               (내가 만든 제품 대상)
+```
+
+- **`playwright-e2e`** — 통제할 수 없는 외부 사이트(Swag Labs · 네이버 날씨)가 대상입니다. `xfailed` 7건은 실패를 덮은 게 아니라 **결함이 심어진 계정으로 같은 검증을 한 번 더 돌려, 자동화가 제품 결함을 잡아내는지 확인한 결과**입니다
+- **`loyalhub-e2e`** — 대상 앱도 제가 만들어서, 테스트가 요구하는 것을 제품에 반영할 수 있습니다. 셀렉터를 추측하지 않고 **계약(`data-testid` · `aria-pressed`)으로 고정**했습니다
+- **CI 판단이 정반대입니다** — 외부 사이트는 해외 IP 러너에서 돌리면 코드가 멀쩡해도 빨간불이 뜨므로 **구조 검사만** 하고, 내 제품은 시드가 결정적이라 **전부 실행 + 매일 스케줄**로 돌립니다
+- 대상 사이트 개편으로 깨진 3건을 복구 — `wait_for_url` 만으로는 부족했습니다. **주소가 화면보다 먼저 바뀌어서**, 그 화면에만 있는 요소가 붙었는지까지 확인하도록 고쳤습니다
+- **Stack** : Playwright (Python · TypeScript) · pytest · Page Object Model · GitHub Actions
+
+---
 
 ### [Redmine QA 플랫폼](https://github.com/changmindev/redmine-qa-platform)
 > 이슈 트래커 연동 QA 자동화 — 릴리스 준비도 판정 · AI 기반 테스트케이스 생성
