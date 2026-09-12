@@ -54,7 +54,7 @@
 
 ### [모바일 앱 자동화 프레임워크](https://github.com/changmindev/auto-test.demo)
 > Android 앱 대상 Appium(UiAutomator2) 기반 Excel-Driven 자동화 프레임워크
-> — 재직 중 운영·고도화한 자동화 구조를 공개용 데모로 재구성했습니다 (앱 정보·TC 데이터는 전부 익명화).
+> — 앱 정보·테스트케이스 데이터를 전부 익명화한 공개용 데모입니다.
 
 - Excel로 테스트케이스 관리, HTML 리포트 + JSON + 스크린샷 자동 생성
 - `actions / core / utils` 단방향 의존 구조로 정리 — 새 액션 추가 시 수정 지점을 한 곳으로 고정
