@@ -8,14 +8,14 @@
 ## Experience
 
 ### 위버스브레인 · QA Engineer (2026.02 ~ 현재)
-- **SSO 통합인증(Keycloak) 전환 프로젝트 QA 단독 수행** — 기능·비기능(보안·성능) 테스트 설계·수행, 소셜 로그인(네이버·카카오·애플) 조합별 회귀 테스트, 결함 발견·재현 시나리오 작성
-- MAX AI·스피킹맥스 STT 음성 인식·AI 응답 품질 검증 체계 수립, 뇌새김 실기기(갤럭시탭·LG탭) 기준 학습 플로우 E2E 검증
-- Claude SDK/MCP 기반 QA 지원 도구 자체 개발, 기존 Appium 자동화 스크립트 고도화
+- **SSO 통합인증(Keycloak) 전환 프로젝트 QA 단독 수행** — 기능 테스트와 인증 보안 관점 시나리오 설계·수행, 소셜 로그인(네이버·카카오·애플) 조합별 회귀 테스트, 결함 발견·재현 시나리오 작성
+- MAX AI·스피킹맥스 STT 음성 인식·AI 응답 품질 검증 기준 수립, 뇌새김 실기기(갤럭시탭 A 시리즈·LG 8·10인치) 기준 학습 플로우 E2E 검증
+- Claude SDK/MCP 기반 QA 지원 도구 구축, 기존 Appium 자동화 스크립트 운영 및 유지보수
 
 ### 와이즈스톤(Shoplive Korea 파견) · QA Engineer (2023.08 ~ 2025.12)
 - 라이브 스트리밍 특화 QA 기준 수립(지연·화질 저하·채팅 동기화), Charles Proxy 네트워크 시뮬레이션으로 엣지 결함 발견
 - AI Clip 기능 실패 유형 분류·재현 시나리오 문서화, eBay Auction 글로벌 서비스 다국어(L10n) 검증
-- Postman API 테스트 컬렉션 구축, Jira·Confluence 기반 QA 프로세스 설계·운영, Shift-Left Testing 참여
+- Jira·Confluence 기반 QA 프로세스 설계·운영, Shift-Left Testing 참여
 
 ---
 
