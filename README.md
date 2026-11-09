@@ -64,7 +64,9 @@ loyalhub-e2e     27 tests — 27 passed               (내가 만든 제품 대�
 
 - 근거(evidence) 기반 신뢰도 판정 — 생성된 테스트케이스마다 원문 근거를 남겨, 사람 검수 없이 실행해도 되는지 시스템이 스스로 판단
 - 이슈 → 테스트케이스 → 실행결과 → 결함을 잇는 요구사항 추적 매트릭스(RTM), 우선순위 가중 워크로드 진단
-- pytest 172케이스, SSRF·수식 주입(Formula Injection) 방어 등 보안까지 고려한 설계
+- **자동화 결과 화면** — JUnit XML(Playwright·pytest)을 올리면 지난 실행과 비교해 **새 실패 / 계속 실패 / 고쳐짐 / 사라진 TC**로 나누고, 통과↔실패가 자꾸 뒤바뀌는 **불안정 TC**를 따로 모읍니다. 실패율이 아니라 뒤바뀐 횟수로 세는 이유는 [DECISIONS.md 10장](https://github.com/changmindev/redmine-qa-platform/blob/main/DECISIONS.md#10-자동화-결과와-결함-등록-2단계)에 있습니다
+- **결함 등록 2단계** — 미리보기에서 사람이 확인해야만 Redmine에 등록됩니다. 확인은 화면이 아니라 서버가 강제해서, API를 바로 부르는 스크립트·AI 도구도 같은 단계를 밟습니다
+- pytest 194케이스, SSRF·수식 주입(Formula Injection) 방어 등 보안까지 고려한 설계
 - **Stack** : Python · Flask · Anthropic Claude SDK/CLI · pytest
 
 ---
