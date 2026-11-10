@@ -57,7 +57,7 @@
 
 ```
 playwright-e2e   97 tests — 90 passed, 7 xfailed    (외부 사이트 대상)
-loyalhub-e2e     27 tests — 27 passed               (내가 만든 제품 대상)
+loyalhub-e2e     27 tests — 27 passed               (내 저장소의 앱 대상)
 ```
 
 - **`playwright-e2e`** — 통제할 수 없는 외부 사이트(Swag Labs · 네이버 날씨)가 대상입니다. `xfailed` 7건은 실패를 덮은 게 아니라 **결함이 심어진 계정으로 같은 검증을 한 번 더 돌려, 자동화가 제품 결함을 잡아내는지 확인한 결과**입니다
